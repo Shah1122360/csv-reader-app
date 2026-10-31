@@ -55,10 +55,10 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     val trash get() = files.filter { it.trashed }
 
     fun setTheme(m: ThemeMode) { themeMode = m; prefs.themeMode = m }
-    fun setPro(v: Boolean) { isPro = v; prefs.isPro = v }
+    fun updatePro(v: Boolean) { isPro = v; prefs.isPro = v }
     fun finishOnboarding() { onboarded = true; prefs.onboarded = true }
     fun resetOnboarding() { onboarded = false; prefs.onboarded = false }
-    fun setLanguage(l: String) { language = l; prefs.language = l }
+    fun updateLanguage(l: String) { language = l; prefs.language = l }
 
     private fun saveFiles(list: List<FileItem>) { files = list; prefs.saveFiles(list) }
 

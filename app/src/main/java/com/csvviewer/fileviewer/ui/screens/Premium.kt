@@ -150,7 +150,7 @@ fun PremiumScreen(vm: AppViewModel, nav: NavController) {
         confirmButton = {
             TextButton(onClick = {
                 confirm = false
-                vm.setPro(true)
+                vm.updatePro(true)
                 nav.navigate(Routes.PREMIUM_SUCCESS) { popUpTo(Routes.PREMIUM) { inclusive = true } }
             }) { Text("Unlock for testing") }
         },

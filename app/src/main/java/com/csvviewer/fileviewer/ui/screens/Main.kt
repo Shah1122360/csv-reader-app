@@ -418,7 +418,7 @@ private fun SettingsTab(vm: AppViewModel, nav: NavController, onRate: () -> Unit
         item { SettingsGroup("Debug build") }
         item {
             SettingRow(Icons.Outlined.EmojiEvents, "Premium (testing)", if (vm.isPro) "Unlocked locally" else "Free",
-                trailing = { Switch(checked = vm.isPro, onCheckedChange = { vm.setPro(it) }) }) { vm.setPro(!vm.isPro) }
+                trailing = { Switch(checked = vm.isPro, onCheckedChange = { vm.updatePro(it) }) }) { vm.updatePro(!vm.isPro) }
             SettingRow(Icons.Outlined.Refresh, "Show onboarding again") {
                 vm.resetOnboarding(); ctx.toast("Onboarding will show on next launch")
             }

@@ -228,8 +228,8 @@ fun LanguageScreen(vm: AppViewModel, nav: NavController) {
                 )
             }
             items(languages) { l ->
-                Row(Modifier.fillMaxWidth().clickable { vm.setLanguage(l) }.padding(horizontal = 16.dp, vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
-                    RadioButton(selected = vm.language == l, onClick = { vm.setLanguage(l) })
+                Row(Modifier.fillMaxWidth().clickable { vm.updateLanguage(l) }.padding(horizontal = 16.dp, vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
+                    RadioButton(selected = vm.language == l, onClick = { vm.updateLanguage(l) })
                     Spacer(Modifier.width(8.dp))
                     Text(l, style = MaterialTheme.typography.bodyLarge)
                 }
