@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- White sheet with a green table grid, inside the 66dp safe zone -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36,28h26l12,12v36a4,4 0,0 1,-4 4H36a4,4 0,0 1,-4 -4V32a4,4 0,0 1,4 -4z" />
+    <path
+        android:fillColor="#BBF7D0"
+        android:pathData="M62,28l12,12H66a4,4 0,0 1,-4 -4z" />
+    <path
+        android:fillColor="#15803D"
+        android:pathData="M38,46h30v6H38z M38,56h30v4H38z M38,64h30v4H38z M38,72h30v2H38z" />
+    <path
+        android:fillColor="#15803D"
+        android:pathData="M49,46h2v28h-2z M59,46h2v28h-2z" />
+</vector>
